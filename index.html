@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trip Advisor Website</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,6 +15,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -180,7 +183,7 @@
 
     <!-- navigation bar ends -->
 
-    <form class="max-w-md p-4 md:ms-[20%] lg:ms-[30%] xl:ms-[32%]">
+    <form class="max-w-md p-4 md:ms-[20%] lg:ms-[30%] xl:ms-[32%]" >
       <label
         for="search"
         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -222,8 +225,11 @@
       </div>
     </form>
 
-    <div
+    <div 
       class="bg-gray-100 flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8"
+       data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
     >
       <div class="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
         <div class="text-center">
@@ -266,7 +272,9 @@
       </div>
     </div>
 
-    <div class="lg:m-16">
+    <div class="lg:m-16"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <div class="bg-[#f2b203] max-w-screen p-4 flex flex-col md:flex-row">
         <div class="flex gap-3 items-center my-4 md:hidden">
           <img
@@ -310,7 +318,26 @@
       </div>
     </div>
 
-    <div class="p-5 bg-[#faf1ed]">
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+      class="relative bg-[url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D)] bg-cover  mt-8 mx-4  md:m-16"
+      style="height: 500px"
+    >
+      <div class="absolute bottom-8 left-6 md:left-8 md:bottom-16 text-white">
+        <h1 class="text-4xl font-bold md:text-5xl">
+          Your go-to guide for fall
+        </h1>
+        <p>How to take on the season—at home and afar</p>
+        <button class="bg-white text-black p-4 rounded-full mt-8">
+          Donate Now
+        </button>
+      </div>
+    </div>
+
+    <div class="p-5 bg-[#faf1ed]"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <h1 class="text-center text-4xl font-bold">More to explore</h1>
 
       <div class="flex flex-wrap">
@@ -361,6 +388,43 @@
       </div>
     </div>
 
+    <div
+      class="bg-[#fff7e1] md:flex justify-between items-center gap-8 md:p-10"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+    >
+      <div class="p-8">
+        <img
+          style="height: 78px; width: 70px"
+          src="https://static.tacdn.com/img2/travelers_choice/2023/TC_badge_yellow.svg"
+          alt=""
+        />
+        <div class="mt-4">
+          <h1 class="text-4xl font-bold md:text-5xl">Travelers' Choice</h1>
+          <h1 class="text-4xl font-bold md:text-5xl">Best of the Best</h1>
+          <p class="mt-4">
+            Our top 1% of places, stays, eats, and experiences—decided by you.
+          </p>
+          <button class="bg-black text-white p-2 px-4 rounded-full mt-4">
+            See the winner
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://static.tacdn.com/img2/brand/feed/tc_cards_2023.png"
+          alt=""
+        />
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
