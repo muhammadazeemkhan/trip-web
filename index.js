@@ -46,7 +46,7 @@ donateTl.from("#Donate-2", {
 const travellerTl = gsap.timeline({
   scrollTrigger: {
     trigger: "#traveller-sec",
-    markers: true,
+    // markers: true,
     start: "0% 80%",
     end: "70% 100%",
     scrub: true,
