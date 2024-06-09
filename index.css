@@ -5,8 +5,13 @@
         src: url(poppins-regular.ttf);
     }
 
+    @font-face {
+        font-family: "Bebas";
+        src: url('./Assets/Fonts/bebas/Bebas-Regular.ttf');
+    }
+
 body{
-    font-family: 'Poppins-regular';
+    font-family: 'Bebas';
 }
 
 
