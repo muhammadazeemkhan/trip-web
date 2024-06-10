@@ -6,27 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trip Advisor Website</title>
+  <!-- CSS FILE  -->
   <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- TAILWIND CSS FILE  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- OWL CAROUSAL  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- FONTAWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- FLOWBITE  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+  <!-- AOS ANIMATION  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+
+
 </head>
 
 <body>
   <span class="loader"></span>
 
   <!-- NAVBAR  -->
-  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <nav class="bg-white border-gray-200 h-24 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="" class="flex items-center">
-        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" class="h-8 mr-3"
-          alt="Flowbite Logo" />
+        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" class="h-8 mr-3" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Trip Advisor</span>
       </a>
       <div class="flex md:order-2">
@@ -95,179 +117,257 @@
   </nav>
   <!-- NAVBAR  -->
 
+  <!-- HEADER  -->
   <section
-    class="bg-[url('https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=400')] bg-no-repeat bg-cover min-h-[400px] bg-gray-500 bg-blend-multiply  lg:bg-cover  lg:min-h-[700px] ">
-
-    <div class="flex flex-row justify-center items-center">
-      <div class=" text-center mt-16 lg:mt-32">
-        <h1 class="text-white font-bold tracking-[0.4em] uppercase text-2xl lg:text-[72px] lg:leading-[80px] ">
-          Travelling
-          around the world
+    class="bg-[url('https://images.unsplash.com/photo-1542785853-cf202360bca0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-cover min-h-[400px] bg-gray-500 bg-blend-multiply lg:bg-cover lg:min-h-[700px]">
+    <div class="flex lg:flex-row lg:justify-center lg:items-end px-8">
+      <div class="text- mt-16 lg:mt-40 lg:w-2/3">
+        <h1 class="text-white font-bold tracking-[0.4em] uppercase text-2xl lg:text-[56px] lg:leading-[60px]">
+          Travelling around the world
         </h1>
-        <h2 class="text-white  tracking-[0.3em] uppercase lg:leading-[80px] text-md lg:text-2xl">Build your trip in a
-          minute</h2>
-        <button class="text-white border-2 border-white px-6 py-2 rounded-lg backdrop-blur-md bg-white/15 	">See More
+        <h2 class="text-white tracking-[0.3em] uppercase lg:leading-[40px] text-md lg:text-2xl">
+          Build your trip in a minute
+        </h2>
+
+        <button class="text-white border-2 border-white px-6 py-2 rounded-lg backdrop-blur-md bg-white/15 mt-4">
+          View offers
         </button>
+
+
       </div>
-    </div>
-
-  </section>
-
-
-  <!-- <div id="header" class=" flex flex-col items-center max-w-screen-xl px-4 md:flex-row md:mx-16 sm:px-6 p-8">
-      <div id="header-1" class="flex flex-row justify-center items-center ">
-        <div class="text-center">
-          <h2
-            class="text-4xl font-extrabold leading-10 tracking-tight text-[#301d49] sm:text-5xl sm:leading-none md:text-6xl">
-            Build a trip in
-            <span class="font-bold text-[#301d49]"> minutes</span>
-          </h2>
-          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Get a personalized itinerary just for you, guided by traveler tips
-            and reviews.
-          </p>
-          <div class="md:ms-8 lg:ms-32 xl:ms-40">
-            <div class="mt-5 sm:flex md:mt-8">
-              <div class="rounded-full">
-                <a href=""
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#301d49] border border-transparent rounded-full hover:bg-[#52327c] focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
-                  Start A trip with AI
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div> -->
-
-
-
-
-  <!-- <div id="header-2" class="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
-          <div class="relative w-full  p-3 rounded md:p-8">
-            <div>
-              <img class="rounded-lg" src="https://media.maptiler.com/old/img/mobile/banner-devices.png" />
-            </div>
-          </div>
-        </div> -->
-
-  <div id="Donate-sec" class="lg:m-16">
-    <div class="bg-[#f2b203] max-w-screen p-4 flex flex-col md:flex-row">
-      <div class="flex gap-3 items-center my-4 md:hidden">
-        <img class="h-8" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="" />
-        <span>Trip Advisor Foundation</span>
-      </div>
-      <div id="Donate-1" class="m-2 md:w-1/2">
-        <img class="h-[300px] w-[600px] md:h-[400px]"
-          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/0e/80/f6/caption.jpg?w=400&h=-1&s=1" alt="" />
-      </div>
-
-      <div id="Donate-2" class="flex flex-col items-center md:w-1/2 md:ms-16">
-        <div class="flex gap-3 items-center mt-16 hidden md:inline-flex">
-          <img class="h-8" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
-            alt="" />
-          <span>Trip Advisor Foundation</span>
-        </div>
-
-        <div class="text-center mt-4">
-          <h2 class="text-3xl font-bold">Help Maui & others</h2>
-          <h2 class="text-3xl font-bold mt-2">around the world</h2>
-          <p class="mt-2">
-            The Tripadvisor Foundation is matching donations to World Central
-            Kitchen’s Climate Disaster Fund. Your support helps disaster
-            responses not only in Maui, but worldwide.
-          </p>
-          <button class="bg-black text-white p-4 rounded-full mt-4">
-            Donate Now
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="relative bg-[url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D)] bg-cover mt-8 mx-4 md:m-16"
-    style="height: 500px">
-    <div class="absolute bottom-8 left-6 md:left-8 md:bottom-16 text-white">
-      <h1 class="text-4xl font-bold md:text-5xl">
-        Your go-to guide for fall
-      </h1>
-      <p>How to take on the season—at home and afar</p>
-      <button class="bg-white text-black p-4 rounded-full mt-8">
-        Donate Now
-      </button>
-    </div>
-  </div>
-
-  <div class="p-5 bg-[#faf1ed]">
-    <h1 class="text-center text-4xl font-bold">More to explore</h1>
-
-    <div class="flex flex-wrap">
-      <div class="md:w-1/3">
-        <div class="flex flex-col border rounded-lg overflow-hidden m-4">
+      <div class="lg:w-1/3">
+        <div class="flex flex-col justify-end items-end gap-4">
           <div>
-            <img class="w-full"
+            <a href="">
+              <i class="fa-brands fa-facebook text-white border-2 border-white p-3 rounded-full"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="">
+              <i class="fa-brands fa-instagram text-white border-2 border-white p-3 rounded-full"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="">
+              <i class="fa-brands fa-twitter text-white border-2 border-white p-3 rounded-full"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HEADER  -->
+
+
+  <!-- DESTINATIONS CAROUSAL  -->
+  <div>
+    <div class="flex flex-row justify-between p-6">
+      <h2 class="text-4xl">What is your lifestyle ?</h2>
+      <h2>see all destinations <span><i class="fa-solid fa-arrow-right"></i></span> </h2>
+    </div>
+
+    <div class="py-8">
+      <div class="owl-carousel owl-theme" id="trip-carousal">
+        <!-- CAROUSAL -->
+        <div
+          class="item bg-[url(https://images.unsplash.com/photo-1587538716374-408bb1118e67?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover h-80 w-56 bg-gray-400 bg-blend-multiply rounded-lg ">
+          <div class="relative top-72">
+            <h2 class="text-white text-center">Island Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="item bg-[url(https://images.unsplash.com/photo-1459787915554-b34915863013?q=80&w=1533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover h-80 w-56 bg-gray-400 bg-blend-multiply rounded-lg ">
+          <div class="relative top-72">
+            <h2 class="text-white text-center">City Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="item bg-[url(https://images.unsplash.com/photo-1609865898563-93d63b3daa64?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover h-80 w-56 bg-gray-400 bg-blend-multiply rounded-lg ">
+          <div class="relative top-72">
+            <h2 class="text-white text-center">Adventures Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="item bg-[url(https://images.unsplash.com/photo-1482961667792-d164d3e7ab3d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover h-80 w-56 bg-gray-400 bg-blend-multiply rounded-lg ">
+          <div class="relative top-72">
+            <h2 class="text-white text-center">Hiking Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="item bg-[url(https://images.unsplash.com/photo-1568801556940-e5b3a55fa6ea?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover h-80 w-56 bg-gray-400 bg-blend-multiply rounded-lg ">
+          <div class="relative top-72">
+            <h2 class="text-white text-center">Desert Tour</h2>
+          </div>
+        </div>
+        <!-- CAROUSAL -->
+      </div>
+
+      <!-- NAVIGATIONS  -->
+      <div class="destination-next bg-black border-2 border-white px-3 py-1 rounded-lg relative left-[550px]">
+        <i class="fa-solid fa-arrow-right text-white"></i>
+      </div>
+      <div class="destination-prev bg-black  border-2 border-white px-3 py-1 rounded-lg relative left-[540px]">
+        <i class="fa-solid fa-arrow-left text-white"></i>
+      </div>
+      <!-- NAVIGATIONS  -->
+    </div>
+
+  </div>
+  <!-- DESTINATIONS CAROUSAL  -->
+
+
+  <!-- NEED ASSISTANCE  -->
+  <div
+    class="bg-[url('https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-center bg-cover bg-gray-500 bg-blend-multiply min-h-[400px]">
+    <div class="flex flex-row justify-center items-center px-8 py-8">
+      <div class="text-white lg:w-2/3">
+        <h2 class="lg:text-[56px]">Need assistance</h2>
+        <p class="lg:text-2xl">
+          need hepl? call us or drop a message our agent will be in touch
+          shortly
+        </p>
+        <div class="flex flex-row justify-start items-center gap-4">
+          <div>
+            <button class="text-white border-2 border-white px-6 py-2 rounded-lg backdrop-blur-md bg-white/15 mt-4">
+              Contact us
+            </button>
+          </div>
+
+          <div>
+            <span class="text-white"><i class="fa-solid fa-phone"></i> +66 82 519 2688</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/3">
+        <div class="mt-48 flex flex-col justify-center items-center">
+          <div class="text-white flex flex-row gap-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="text-white flex flex-row justify-start items-center">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+              class="h-10 mr-3" />
+            <h2 class="text-4xl">Tripadvisor</h2>
+          </div>
+
+          <div class="ms-6">
+            <span class="text-white text-sm">based on guest reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NEED ASSISTANCE  -->
+
+  <!-- MORE TO EXPLORE  -->
+  <div class="bg-[#faf1ed] py-6">
+    <h2 class="lg:ms-8 lg:text-[56px] font-bold">More to explore</h2>
+
+    <div class="owl-carousel owl-theme" id="more-explore-carousel">
+      <div class="w-80 h-60 item">
+        <div class="flex flex-col border rounded-lg  m-4">
+          <div>
+            <img class="w-80 h-48"
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9c/5e/f5/caption.jpg?w=400&h=300&s=1"
               alt="" />
           </div>
-          <div class="bg-white p-8 text-center">
+          <div class="bg-white p-4 text-center">
             <span>7 Las Vegas restaurants to try when the top </span>
           </div>
         </div>
       </div>
 
-      <div class="md:w-1/3">
-        <div class="flex flex-col border rounded-lg overflow-hidden m-4">
+      <div class="w-80 h-60 item">
+        <div class="flex flex-col border rounded-lg  m-4">
           <div>
-            <img class="w-full"
+            <img class="w-80 h-48"
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9c/60/3d/7616aca3-eb80-459c.jpg?w=700&h=500&s=1"
               alt="" />
           </div>
-          <div class="bg-white p-8 text-center">
+          <div class="bg-white p-4 text-center">
             <span>Exploring Istanbul solo, one meal at a time</span>
           </div>
         </div>
       </div>
 
-      <div class="md:w-1/3">
-        <div class="flex flex-col border rounded-lg overflow-hidden m-4">
+      <div class="w-80 h-60 item">
+        <div class="flex flex-col border rounded-lg  m-4">
           <div>
-            <img class="w-full"
+            <img class="w-80 h-48"
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9c/60/fa/9f784277-20b2-4179.jpg?w=700&h=500&s=1"
               alt="" />
           </div>
-          <div class="bg-white p-8 text-center">
+          <div class="bg-white p-4 text-center">
+            <span>Exploring Istanbul solo, one meal at a time</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w-80 h-60 item">
+        <div class="flex flex-col border rounded-lg  m-4">
+          <div>
+            <img class="w-80 h-48"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9c/60/fa/9f784277-20b2-4179.jpg?w=700&h=500&s=1"
+              alt="" />
+          </div>
+          <div class="bg-white p-4 text-center">
+            <span>Exploring Istanbul solo, one meal at a time</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-80 h-60 item">
+        <div class="flex flex-col border rounded-lg  m-4">
+          <div>
+            <img class="w-80 h-48"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9c/60/fa/9f784277-20b2-4179.jpg?w=700&h=500&s=1"
+              alt="" />
+          </div>
+          <div class="bg-white p-4 text-center">
             <span>Exploring Istanbul solo, one meal at a time</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- MORE TO EXPLORE  -->
 
-  <div id="traveller-sec" class="bg-[#fff7e1] md:flex justify-between items-center gap-8 md:p-10">
-    <div id="traveller-1" class="p-8">
+
+  <!-- TRAVELLER'S CHOICE  -->
+  <div
+    class="bg-[url(https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-no-repeat bg-cover bg-center min-h-[600px] bg-gray-400 bg-blend-multiply  md:flex justify-between items-center gap-8 md:p-10">
+    <div class="text-white p-8">
       <img style="height: 78px; width: 70px"
         src="https://static.tacdn.com/img2/travelers_choice/2023/TC_badge_yellow.svg" alt="" />
       <div class="mt-4">
-        <h1 class="text-4xl font-bold md:text-5xl">Travelers' Choice</h1>
-        <h1 class="text-4xl font-bold md:text-5xl">Best of the Best</h1>
+        <h2 class="text-4xl font-bold md:text-5xl">Travelers' Choice</h2>
+        <h2 class="text-4xl font-bold md:text-5xl">Best of the Best</h2>
         <p class="mt-4">
           Our top 1% of places, stays, eats, and experiences—decided by you.
         </p>
-        <button class="bg-black text-white p-2 px-4 rounded-full mt-4">
+        <button class="text-white border-2 border-white px-6 py-2 rounded-lg backdrop-blur-md bg-white/15 mt-4">
           See the winner
         </button>
+
       </div>
     </div>
 
-    <div id="traveller-2">
-      <img src="https://static.tacdn.com/img2/brand/feed/tc_cards_2023.png" alt="" />
-    </div>
-  </div>
 
-  <div class="ms-8 my-8 p-2 md:p-4">
+  </div>
+  <!-- TRAVELLER'S CHOICE  -->
+
+
+  <footer class="ms-8 my-8 p-2  md:p-4">
     <h1 class="text-2xl md:text-4xl font-semibold my-4">
       Trending in Travels
     </h1>
@@ -304,7 +404,7 @@
         <li><a href="">Buenos Aires</a></li>
       </ul>
     </div>
-  </div>
+  </footer>
 
   <div class="bg-[#faf1ed] p-4 md:flex justify-between items-center">
     <div class="ms-4 flex items-center space-x-8">
@@ -356,13 +456,21 @@
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+  <!-- OWL CAROUSAL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- INDEX.JS  -->
   <script src="./index.js"></script>
 </body>
 
