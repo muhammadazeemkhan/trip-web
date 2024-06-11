@@ -20,6 +20,7 @@ $(document).ready(function () {
       },
       1024: {
         items: 4,
+        margin: -200,
       },
     },
   });
@@ -29,8 +30,11 @@ $(document).ready(function () {
   $("#more-explore-carousel").owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 2000,
-    autoplaySpeed: 1000,
+    // autoplayTimeout: 2000,
+    // autoplaySpeed: 1000,
+    slideTransition: "linear",
+    autoplaySpeed: 6000,
+    smartSpeed: 6000,
     center: true,
     navSpeed: 2500,
     margin: 10,
@@ -50,24 +54,51 @@ $(document).ready(function () {
       },
     },
   });
+
+  jQuery("#more-explore-carousel").trigger("play.owl.autoplay", [2000]);
+
+  function setSpeed() {
+    jQuery("#more-explore-carousel").trigger("play.owl.autoplay", [6000]);
+  }
+
+  setTimeout(setSpeed, 1000);
 });
 
-// $(".owl-carousel").owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 3,
-//     },
-//     1000: {
-//       items: 4,
-//     },
-//   },
-// });
+$(document).ready(function () {
+  $("#text-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplaySpeed: 3000,
+    smartSpeed: 3000,
+    dots: false,
+    center: true,
+    margin: 5,
+    responsiveRefreshRate: 200,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      300: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1024: {
+        items: 6,
+      },
+    },
+  });
+
+  jQuery("#text-carousel").trigger("play.owl.autoplay", [2000]);
+
+  function setSpeed() {
+    jQuery("#text-carousel").trigger("play.owl.autoplay", [3000]);
+  }
+
+  setTimeout(setSpeed, 1000);
+});
 
 // const tl = gsap.timeline();
 
