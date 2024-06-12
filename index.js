@@ -39,7 +39,7 @@ $(document).ready(function () {
     navSpeed: 2500,
     margin: 10,
     // nav: true,
-    dots: true,
+    dots: false,
     // navText: [$(".destination-prev"), $(".destination-next")],
     responsiveRefreshRate: 200,
     responsive: {
@@ -66,6 +66,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#text-carousel").owlCarousel({
+    // rtl: true,
     loop: true,
     autoplay: true,
     slideTransition: "linear",
