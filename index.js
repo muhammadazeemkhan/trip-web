@@ -45,6 +45,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        margin: 40,
       },
       600: {
         items: 2,
